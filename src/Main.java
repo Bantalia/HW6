@@ -9,6 +9,7 @@ public class Main {
         } else {
             System.out.println("Если возраст человека ,меньше " + age + " он не достиг совершеннолетия, нужно немного подождать.");
         }
+
         //Задача 2
         int temperature = 5;
         if (temperature < 5) {
@@ -16,8 +17,9 @@ public class Main {
         } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
+
         //Задача 3
-        int speed = 60;
+        int speed = 80;
         if (speed > 60) {
             System.out.println("Если скорость " + speed + "км/ч, придется заплатить штраф ");
         } else {
@@ -32,7 +34,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + ageReachesChild + " лет, то ему нужно ходить в школу.");
         } else if (ageReachesChild >= 18 && ageReachesChild <= 24) {
             System.out.println("Если возраст человека равен " + ageReachesChild + " то его место в университете.");
-        } else if (ageReachesChild > 24) {
+        } else {
             System.out.println("Если возраст человека равен " + ageReachesChild + "  то ему пора ходить на работу..");
         }
 
@@ -40,34 +42,30 @@ public class Main {
         int ageChild = 5;
         if (ageChild <= 5) {
             System.out.println(" Если возраст ребенка равен " + ageChild + " то он не может кататься на аттракционе.");
-        }
-        if (ageChild > 5 && ageChild < 14) {
+        } else if (ageChild > 5 && ageChild < 14) {
             System.out.println(" Если возраст ребенка равен " + ageChild + " то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-        } else if (ageChild > 14) {
+        } else {
             System.out.println(" Если возраст ребенка равен " + ageChild + " то он может кататься без сопровождения взрослого..");
         }
+
         //Задача 6
         int passengers = 50;
         if (passengers < 60) {
             System.out.println("Если количество пассажиров " + passengers + " человек. Свободные места есть и стоячие, и сидячие.");
-        }
-        if (passengers >= 60 && passengers < 102) {
+        } else if (passengers >= 60 && passengers < 102) {
             System.out.println("Если количество пассажиров " + passengers + " человек. Свободные места остались только стоячие, но еще есть.");
-        } else if (passengers >= 102) {
+        } else {
             System.out.println("Если количество пассажиров " + passengers + " человек. Простите, свободных мест нет!.");
         }
         //Задача 7
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (one < two) {
-            System.out.println("Один меньше двух");
-        }
-        if (two > one && two < three) {
-            System.out.println("Один меньше двух . Два больше одного но меньше трех");
-        }
-        if (three > two) {
-            System.out.println("Три больше двух");
-        }
+        int one = 20;
+        int two = 100;
+        int three = 400;
+        if (one >= two && one >= three) {
+            System.out.println("максимальное число равно one " + one);
+        } else if (two >= three) {
+            System.out.println("максимальное число равно two" + two);
+        } else System.out.println("максимальное число равно three " + three);
     }
+
 }
