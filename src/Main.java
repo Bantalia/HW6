@@ -28,11 +28,9 @@ public class Main {
         int ageReachesChild = 25;
         if (ageReachesChild >= 2 && ageReachesChild <= 6) {
             System.out.println("Если возраст человека равен " + ageReachesChild + " лет, то ему нужно ходить в детский сад.");
-        }
-        if (ageReachesChild >= 7 && ageReachesChild <= 17) {
+        } else if (ageReachesChild >= 7 && ageReachesChild <= 17) {
             System.out.println("Если возраст человека равен " + ageReachesChild + " лет, то ему нужно ходить в школу.");
-        }
-        if (ageReachesChild >= 18 && ageReachesChild <= 24) {
+        } else if (ageReachesChild >= 18 && ageReachesChild <= 24) {
             System.out.println("Если возраст человека равен " + ageReachesChild + " то его место в университете.");
         } else if (ageReachesChild > 24) {
             System.out.println("Если возраст человека равен " + ageReachesChild + "  то ему пора ходить на работу..");
@@ -60,20 +58,16 @@ public class Main {
         }
         //Задача 7
         int one = 1;
-        int two = 6;
+        int two = 2;
         int three = 3;
-        boolean oneLessThanTwo = one < two;
-        if (oneLessThanTwo) {
+        if (one < two) {
             System.out.println("Один меньше двух");
         }
-        boolean threeMoreThanTwo = three > two;
-        if (threeMoreThanTwo) {
-            System.out.println("Три больше двух");
+        if (two > one && two < three) {
+            System.out.println("Один меньше двух . Два больше одного но меньше трех");
         }
-        boolean twoMoreOneLessThree = two > one && two < three;
-        if (twoMoreOneLessThree) {
-            System.out.println("Два больше одного но меньше трех");
-
+        if (three > two) {
+            System.out.println("Три больше двух");
         }
     }
 }
