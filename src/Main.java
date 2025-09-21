@@ -61,11 +61,9 @@ public class Main {
         int one = 20;
         int two = 100;
         int three = 400;
-        if (one >= two && one >= three) {
+        if (one > two && one > three) {
             System.out.println("максимальное число равно one " + one);
-        } else if (two >= three) {
-            System.out.println("максимальное число равно two" + two);
         } else System.out.println("максимальное число равно three " + three);
     }
-
 }
+
