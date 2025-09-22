@@ -63,7 +63,11 @@ public class Main {
         int three = 400;
         if (one > two && one > three) {
             System.out.println("максимальное число равно one " + one);
-        } else System.out.println("максимальное число равно three " + three);
+        } else if (two > one && two > three) {
+            System.out.println("максимальное число равно two " + two);
+        } else {
+            System.out.println("максимальное число равно three " + three);
+        }
     }
 }
 
